@@ -1,0 +1,25 @@
+{
+    "name": "Java Spring Boot Development",
+    
+    // Use the official Codespaces image with support for multiple languages
+    "image": "mcr.microsoft.com/devcontainers/universal:latest",
+
+    // Install Java 17 and Maven
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "17",
+            "installMaven": "true"
+        }
+    },
+    
+    // Set Java 17 as the default JDK for the terminal
+    "settings": {
+        "java.configuration.runtimes": [
+            {
+                "name": "JavaSE-17",
+                "path": "/usr/local/sdkman/candidates/java/17.0.10-tem",
+                "default": true
+            }
+        ]
+    }
+}
